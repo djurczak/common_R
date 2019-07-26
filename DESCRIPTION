@@ -1,13 +1,14 @@
 Package: common.R
 Title: Common operations used in @djurczak's scripts
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person(given = "Daniel",
            family = "Jay",
            role = c("aut", "cre"),
-           email = "jurczakd@icloud.com"
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "jurczakd@icloud.com",
+           comment = c(ORCID = "0000-0002-1786-9867"))
 Description: Common stuff
 License: Blah
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
