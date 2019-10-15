@@ -1,6 +1,6 @@
 Package: common.R
 Title: Common operations used in @djurczak's scripts
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R:
     person(given = "Daniel",
            family = "Jay",
@@ -8,7 +8,7 @@ Authors@R:
            email = "jurczakd@icloud.com",
            comment = c(ORCID = "0000-0002-1786-9867"))
 Description: Common stuff
-License: Blah
+License: None
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
