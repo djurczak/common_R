@@ -4,7 +4,6 @@ library(tidyr)
 library(tibble)
 library(ensurer)
 library(openxlsx)
-library(ggplot2)
 
 #' @title normalize_column_names
 #'
@@ -23,17 +22,6 @@ normalize_column_names <- function(data_) {
   colnames(data_) = gsub('([[:punct:]])\\1+', '\\1', valid_names)
 
   return(data_)
-}
-
-build.scatter.plot <- function(data, x.name, y.name, title, xlab, ylab) {
-  plot = ggplot(data, aes_string(x=x.name, y=y.name)) +
-    ggtitle(title) + xlab(xlab) + ylab(ylab) +
-    expand_limits(x = 0, y = 0) +
-    geom_hline(yintercept=0, color = "grey") +
-    geom_vline(xintercept=0, color = "grey") +
-    geom_point()
-
-  return(plot)
 }
 
 #' @title write_to_spreadsheet
